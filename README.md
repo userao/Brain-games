@@ -4,5 +4,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 installing packages: https://asciinema.org/a/6X9ZwVDmB0EBXk39FNZDkGTAa
-players winning: https://asciinema.org/a/qy7AheHuAHREYKvweyx1m18yh
-player losing: https://asciinema.org/a/4SDnwZyFADq6LD7g7WYtEk67A
+players winning in brain-even: https://asciinema.org/a/qy7AheHuAHREYKvweyx1m18yh
+player losing in brain-even: https://asciinema.org/a/4SDnwZyFADq6LD7g7WYtEk67A
+
+players winning in brain-calc: https://asciinema.org/a/KAfMsqhgKV3lOeob2pAcMVxLM
+players losing in brain-calc: https://asciinema.org/a/t5Qz2xzn85rNq80poctLxVPEA
