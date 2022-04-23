@@ -1,14 +1,12 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
+import greeter from '../src/cli.js';
 
 const isEven = (num) => (num % 2 === 0 ? 1 : 0);
 
 let winCount = 0;
 
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${name}!`);
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const name = greeter();
 
 while (winCount < 3) {
   const randomNum = Math.floor(Math.random() * 99 + 1);
