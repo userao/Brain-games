@@ -20,3 +20,7 @@
 **Brain-progression**
 * player winning in brain-progression: https://asciinema.org/a/ixGJZkByDZUyAbXGyLQVQAKky
 * player losing in brain-progression: https://asciinema.org/a/dUaTn5SiSN5Yl1LfqBCBV437I
+
+**Brain-prime**
+* player winning in brain-prime: https://asciinema.org/a/8TD3kT9iSGAxbdRRMfJe5s8aT
+* player losing in brain-prime: https://asciinema.org/a/2mwqAY6BHFsFP5JXmdRmpAUav
