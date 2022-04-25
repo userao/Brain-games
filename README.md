@@ -3,7 +3,7 @@
 [![Linter check](https://github.com/userao/frontend-project-lvl1/workflows/linter-check/badge.svg)](https://github.com/userao/frontend-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
-*installing packages: https://asciinema.org/a/6X9ZwVDmB0EBXk39FNZDkGTAa
+* installing packages: https://asciinema.org/a/6X9ZwVDmB0EBXk39FNZDkGTAa
 
 **Brain-even**
 * player winning in brain-even: https://asciinema.org/a/qy7AheHuAHREYKvweyx1m18yh
