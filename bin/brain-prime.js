@@ -8,7 +8,7 @@ const question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 let winCount = 0;
 
 while (winCount < 4) {
-  const number = Math.floor(Math.random() * 200);
+  const number = Math.floor(Math.random() * 200 + 1);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   if (asker(question, number, correctAnswer, name, winCount)) {
     winCount += 1;
