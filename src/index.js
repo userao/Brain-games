@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 export default (question, task, correctAnswer, playerName, winCount) => {
   if (winCount === 0) console.log(`${question}`);
   if (winCount === 3) {
-    console.log(`Congratulations, ${playerName}`);
+    console.log(`Congratulations, ${playerName}!`);
     return true;
   }
   console.log(`Question: ${task}`);
