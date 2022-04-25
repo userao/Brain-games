@@ -6,13 +6,17 @@
 *installing packages: https://asciinema.org/a/6X9ZwVDmB0EBXk39FNZDkGTAa
 
 **Brain-even**
-* players winning in brain-even: https://asciinema.org/a/qy7AheHuAHREYKvweyx1m18yh
+* player winning in brain-even: https://asciinema.org/a/qy7AheHuAHREYKvweyx1m18yh
 * player losing in brain-even: https://asciinema.org/a/4SDnwZyFADq6LD7g7WYtEk67A
 
 **Brain-calc**
-* players winning in brain-calc: https://asciinema.org/a/KAfMsqhgKV3lOeob2pAcMVxLM
-* players losing in brain-calc: https://asciinema.org/a/t5Qz2xzn85rNq80poctLxVPEA
+* player winning in brain-calc: https://asciinema.org/a/KAfMsqhgKV3lOeob2pAcMVxLM
+* player losing in brain-calc: https://asciinema.org/a/t5Qz2xzn85rNq80poctLxVPEA
 
 **Brain-gcd**
 * player winning in brain-gcd: https://asciinema.org/a/1QITSp0N3uAKRKrlsNjHfFsYf
-* player winning in brain-gcd: https://asciinema.org/a/Q87FerUbHf3Gpd22iLNop01IK
+* player losing in brain-gcd: https://asciinema.org/a/Q87FerUbHf3Gpd22iLNop01IK
+
+**Brain-progression**
+* player winning in brain-progression: https://asciinema.org/a/ixGJZkByDZUyAbXGyLQVQAKky
+* player losing in brain-progression: https://asciinema.org/a/dUaTn5SiSN5Yl1LfqBCBV437I
