@@ -14,6 +14,6 @@ export default (question, task, correctAnswer, playerName, winCount) => {
   }
 
   console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.
-Let's try again, ${playerName}`);
+Let's try again, ${playerName}!`);
   return false;
 };
