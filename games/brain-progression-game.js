@@ -8,7 +8,7 @@ export default () => {
 
   while (winCount < 4) {
     const solvableProgression = generateProgression();
-    const hiddenPosition = generateRandomNum(solvableProgression.length, 0);
+    const hiddenPosition = generateRandomNum(solvableProgression.length - 1, 0);
     const correctAnswer = solvableProgression[hiddenPosition];
     solvableProgression[hiddenPosition] = '..';
     const task = solvableProgression.join(' ');
