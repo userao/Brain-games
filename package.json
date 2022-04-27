@@ -1,8 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/userao/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/userao/frontend-project-lvl1/actions)",
-  "main": "index.js",
+  "description": "In that game player solving some base math tasks",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
