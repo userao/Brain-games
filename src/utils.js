@@ -53,7 +53,7 @@ const greatestDivisor = (fisrtNumber, secondNumber) => {
 const isEven = (num) => (num % 2 === 0 ? 1 : 0);
 
 const isPrime = (num) => {
-  const limitOfDivisors = Math.round(Math.sqrt(num)) + 1;
+  const limitOfDivisors = Math.round(Math.sqrt(num));
   for (let i = limitOfDivisors; i > 1; i -= 1) {
     if (num % i === 0) return false;
   }
