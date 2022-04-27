@@ -1,10 +1,16 @@
+import generateRandomNum from './random-number-generator.js';
+
 const generateProgression = () => {
-  const progressionLength = Math.round(Math.random() * (10 - 5) + 5);
-  const progressionStep = Math.round(Math.random() * (20 - 2) + 2);
+  const maximumLength = 10;
+  const minimumLength = 5;
+  const maximumStep = 20;
+  const minimumStep = 2;
+  const progressionLength = generateRandomNum(maximumLength, minimumLength);
+  const progressionStep = generateRandomNum(maximumStep, minimumStep);
   const progression = [];
 
   for (let i = 0; i < progressionLength; i += 1) {
-    if (i === 0) progression[i] = Math.round(Math.random() * (10 - 1) + 1);
+    if (i === 0) progression[i] = generateRandomNum();
     progression[i + 1] = progression[i] + progressionStep;
   }
 

@@ -1,5 +1,6 @@
 const isPrime = (num) => {
-  for (let i = Math.round(Math.sqrt(num)); i > 1; i -= 1) {
+  const limitOfDivisors = Math.round(Math.sqrt(num)) + 1;
+  for (let i = limitOfDivisors; i > 1; i -= 1) {
     if (num % i === 0) return false;
   }
   return true;
