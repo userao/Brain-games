@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/userao/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/userao/frontend-project-lvl1/actions)
 [![Linter check](https://github.com/userao/frontend-project-lvl1/workflows/linter-check/badge.svg)](https://github.com/userao/frontend-project-lvl1/actions)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/28f9701c22d8051415e1/test_coverage)](https://codeclimate.com/github/userao/frontend-project-lvl1/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/28f9701c22d8051415e1/maintainability)](https://codeclimate.com/github/userao/frontend-project-lvl1/maintainability)
 * installing packages: https://asciinema.org/a/6X9ZwVDmB0EBXk39FNZDkGTAa
 
 **Brain-even**
