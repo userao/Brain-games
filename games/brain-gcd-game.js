@@ -1,7 +1,5 @@
-import greeter from '../src/cli.js';
 import asker from '../src/index.js';
-import greatestDivisor from '../src/greatest-divisor.js';
-import generateRandomNum from '../src/random-number-generator.js';
+import { greeter, greatestDivisor, generateRandomNum } from '../src/utils.js';
 
 export default () => {
   const name = greeter();

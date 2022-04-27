@@ -1,7 +1,5 @@
 import asker from '../src/index.js';
-import greeter from '../src/cli.js';
-import calculate from '../src/calc.js';
-import generateRandomNum from '../src/random-number-generator.js';
+import { calculate, greeter, generateRandomNum } from '../src/utils.js';
 
 export default () => {
   const question = 'What is the result of the expression?';

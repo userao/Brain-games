@@ -1,7 +1,5 @@
-import greeter from '../src/cli.js';
 import asker from '../src/index.js';
-import isEven from '../src/is-even.js';
-import generateRandomNum from '../src/random-number-generator.js';
+import { greeter, generateRandomNum, isEven } from '../src/utils.js';
 
 export default () => {
   const question = 'Answer "yes" if the number is even, otherwise answer "no".';

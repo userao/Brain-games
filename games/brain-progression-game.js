@@ -1,7 +1,5 @@
-import greeter from '../src/cli.js';
 import asker from '../src/index.js';
-import generateProgression from '../src/generate-progression.js';
-import generateRandomNum from '../src/random-number-generator.js';
+import { greeter, generateProgression, generateRandomNum } from '../src/utils.js';
 
 export default () => {
   const name = greeter();
