@@ -1,20 +1,25 @@
 import readlineSync from 'readline-sync';
-import { greetPlayer } from './utils.js';
 
-export default (question, gameData) => {
+const greetPlayer = () => {
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  return name;
+};
+
+export const roundsCount = 3;
+
+export const playGame = (question, gameData) => {
   const playerName = greetPlayer();
-  const roundsCount = gameData.length;
-
-  // Теперь в файле игры генерируются данные сразу на три раунда,
-  // и передаются в движок в виде массива.
 
   console.log(`${question}`);
-  for (let round = 1; round < roundsCount; round += 1) {
-    const task = gameData[round][0];
-    const correctAnswer = gameData[round][1];
+  for (let round = 1; round <= roundsCount; round += 1) {
+    const [task, correctAnswer] = gameData[round];
     console.log(`Question: ${task}`);
-    const playerAnswer = readlineSync.question('Your answer: ');
-    if (String(playerAnswer) === String(correctAnswer)) {
+    let playerAnswer = readlineSync.question('Your answer: ');
+    if (typeof correctAnswer === 'number') {
+      playerAnswer = +playerAnswer;
+    }
+    if (playerAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
       console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.

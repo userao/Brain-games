@@ -1,20 +1,31 @@
-import askPlayer from '../index.js';
-import { generateRandomNumber } from '../utils.js';
-import generateProgression from '../generate-progression.js';
+import { playGame, roundsCount } from '../index.js';
+import generateRandomNumber from '../utils.js';
+
+const generateProgression = () => {
+  const progressionLength = generateRandomNumber(5, 10);
+  const progressionStep = generateRandomNumber(2, 20);
+  const progression = [];
+
+  for (let i = 0; i < progressionLength; i += 1) {
+    if (i === 0) progression[i] = generateRandomNumber();
+    progression[i + 1] = progression[i] + progressionStep;
+  }
+
+  return progression;
+};
 
 export default () => {
   const question = 'What number is missing in the progression?';
 
-  const gameData = [];
-  for (let rounds = 0; rounds <= 3; rounds += 1) {
+  const tasksAndAnswers = [];
+  for (let pairsCount = 0; pairsCount <= roundsCount; pairsCount += 1) {
     const solvableProgression = generateProgression();
     const hiddenPosition = generateRandomNumber(0, solvableProgression.length - 1);
     const correctAnswer = solvableProgression[hiddenPosition];
     solvableProgression[hiddenPosition] = '..';
     const task = solvableProgression.join(' ');
-    const dataForOneRound = [task, correctAnswer];
-    gameData.push(dataForOneRound);
+    tasksAndAnswers.push([task, correctAnswer]);
   }
 
-  askPlayer(question, gameData);
+  playGame(question, tasksAndAnswers);
 };
