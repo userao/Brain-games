@@ -13,12 +13,12 @@ const isPrime = (num) => {
 export default () => {
   const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-  const tasksAndAnswers = [];
-  for (let pairsCount = 0; pairsCount <= roundsCount; pairsCount += 1) {
+  const rounds = [];
+  for (let i = 0; i <= roundsCount; i += 1) {
     const randomNumber = generateRandomNumber(1, 200);
     const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
-    tasksAndAnswers.push([randomNumber, correctAnswer]);
+    rounds.push([randomNumber, correctAnswer]);
   }
 
-  playGame(question, tasksAndAnswers);
+  playGame(question, rounds, 'string');
 };
