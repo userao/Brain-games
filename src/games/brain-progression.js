@@ -19,17 +19,17 @@ export default () => {
     const progressionLength = generateRandomNumber(5, 10);
     const progressionStep = generateRandomNumber(2, 20);
     const firstNumberOfProgression = generateRandomNumber();
-    const solvableProgression = generateProgression(
+    const progression = generateProgression(
       progressionLength,
       progressionStep,
       firstNumberOfProgression,
     );
-    const hiddenPosition = generateRandomNumber(0, solvableProgression.length - 1);
-    const correctAnswer = solvableProgression[hiddenPosition];
-    solvableProgression[hiddenPosition] = '..';
-    const task = solvableProgression.join(' ');
-    rounds.push([task, correctAnswer]);
+    const hiddenPosition = generateRandomNumber(0, progression.length - 1);
+    const correctAnswer = progression[hiddenPosition];
+    progression[hiddenPosition] = '..';
+    const task = progression.join(' ');
+    rounds.push([task, String(correctAnswer)]);
   }
 
-  playGame(question, rounds, 'number');
+  playGame(question, rounds);
 };

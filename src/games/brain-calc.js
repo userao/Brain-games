@@ -1,6 +1,8 @@
 import { playGame, roundsCount } from '../index.js';
 import generateRandomNumber from '../utils.js';
 
+const question = 'What is the result of the expression?';
+
 const calculate = (num1, num2, sign) => {
   switch (sign) {
     case '+':
@@ -15,18 +17,16 @@ const calculate = (num1, num2, sign) => {
 };
 
 export default () => {
-  const question = 'What is the result of the expression?';
-
   const rounds = [];
   for (let i = 0; i <= roundsCount; i += 1) {
     const firstNumber = generateRandomNumber(1, 20);
     const secondNumber = generateRandomNumber(1, 20);
-    const supportedOperationSigns = ['+', '*', '-'];
-    const sign = supportedOperationSigns[generateRandomNumber(0, 2)];
+    const operations = ['+', '*', '-'];
+    const sign = operations[generateRandomNumber(0, operations.length - 1)];
     const correctAnswer = calculate(firstNumber, secondNumber, sign);
     const task = `${firstNumber} ${sign} ${secondNumber}`;
-    rounds.push([task, correctAnswer]);
+    rounds.push([task, String(correctAnswer)]);
   }
 
-  playGame(question, rounds, 'number');
+  playGame(question, rounds);
 };

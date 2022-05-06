@@ -1,6 +1,8 @@
 import { playGame, roundsCount } from '../index.js';
 import generateRandomNumber from '../utils.js';
 
+const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const isPrime = (num) => {
   if (num < 2) return false;
   const limitOfDivisor = Math.round(Math.sqrt(num));
@@ -11,8 +13,6 @@ const isPrime = (num) => {
 };
 
 export default () => {
-  const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
   const rounds = [];
   for (let i = 0; i <= roundsCount; i += 1) {
     const randomNumber = generateRandomNumber(1, 200);
@@ -20,5 +20,5 @@ export default () => {
     rounds.push([randomNumber, correctAnswer]);
   }
 
-  playGame(question, rounds, 'string');
+  playGame(question, rounds);
 };
