@@ -25,10 +25,10 @@ export default () => {
       firstNumberOfProgression,
     );
     const hiddenPosition = generateRandomNumber(0, progression.length - 1);
-    const correctAnswer = progression[hiddenPosition];
+    const correctAnswer = progression[hiddenPosition].toString();
     progression[hiddenPosition] = '..';
     const task = progression.join(' ');
-    rounds.push([task, String(correctAnswer)]);
+    rounds.push([task, correctAnswer]);
   }
 
   playGame(question, rounds);

@@ -23,9 +23,9 @@ export default () => {
     const secondNumber = generateRandomNumber(1, 20);
     const operations = ['+', '*', '-'];
     const sign = operations[generateRandomNumber(0, operations.length - 1)];
-    const correctAnswer = calculate(firstNumber, secondNumber, sign);
+    const correctAnswer = calculate(firstNumber, secondNumber, sign).toString();
     const task = `${firstNumber} ${sign} ${secondNumber}`;
-    rounds.push([task, String(correctAnswer)]);
+    rounds.push([task, correctAnswer]);
   }
 
   playGame(question, rounds);

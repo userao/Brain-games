@@ -27,7 +27,7 @@ export default () => {
   for (let i = 0; i <= roundsCount; i += 1) {
     const firstNumber = generateRandomNumber(1, 100);
     const secondNumber = generateRandomNumber(1, 100);
-    const correctAnswer = findGreatestDivisor(firstNumber, secondNumber);
+    const correctAnswer = findGreatestDivisor(firstNumber, secondNumber).toString();
     const task = `${firstNumber} ${secondNumber}`;
     rounds.push([task, correctAnswer]);
   }
