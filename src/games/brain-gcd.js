@@ -29,7 +29,7 @@ export default () => {
     const secondNumber = generateRandomNumber(1, 100);
     const correctAnswer = findGreatestDivisor(firstNumber, secondNumber);
     const task = `${firstNumber} ${secondNumber}`;
-    rounds.push([task, String(correctAnswer)]);
+    rounds.push([task, correctAnswer]);
   }
 
   playGame(question, rounds);
